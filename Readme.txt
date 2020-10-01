@@ -12,3 +12,6 @@ Goals: A responsive Website that serves these purposes:
 
 -----------------------------------------------------------------------------------------------
 
+-- what i want to do, just for fun, and because i am interested:
+    - make it possible to Download some of my photos in high quality.
+     -- load the site on my own webserver, make it reacheble from outside the lan

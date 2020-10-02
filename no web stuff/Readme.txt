@@ -21,3 +21,11 @@ Goals: A responsive Website that serves these purposes:
 
 
 -- what should the text at the Homepage say, how should i say it? 
+
+
+---------------------------------------------------------------------------------
+Tips: 
+
+checking the markup: w3C markup validation service
+
+

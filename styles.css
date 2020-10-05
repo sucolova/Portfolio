@@ -1,10 +1,41 @@
-h1 {
-    font-family: prestige-elite-std, monospace;
-    font-weight: 900;
-    font-style: normal;
-    color: black;
+html {
+    box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
+h1 {
+    font-weight: 1300;
+    font-style: normal;
+    color: black;
+    flex: 1;
 }
+
+ul.languageSelect {
+    list-style-type: none;
+    flex: 2;
+}
+
+span {
+    font-family: prestige-elite-std, monospace;
+    display: flex;
+    width: 100%;
+    padding-left: 0%;
+    margin-left: 0%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+
+
+
+ul li {
+    display: inline-flex;
+    
+}
+
+nav {
+    display: inline-flex;
+}
+
+/*ul.languageSelect {
+    align-items: center;
+}*/

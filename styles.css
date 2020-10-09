@@ -1,11 +1,13 @@
-#container {
+#container, header{
     font-family: prestige-elite-std, monospace;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr;
-    grid-template-rows: auto auto 1em;
-    grid-template-areas: "heading nav nav langSel"
+    grid-template-columns: 1fr 1fr 3fr 1fr;
+    grid-template-rows: 5em auto auto;
+    grid-template-areas: "heading nav nav ls"
                             "article article gallery gallery"
                             "footer footer footer footer";
+    align-items: stretch;
+    gap: .5em;
 }
 
 
@@ -14,26 +16,66 @@ html {
    
 }
 
+header {
+    background-color: #5E2D5E;
+    display: flex;
+    align-items: center;
+}
+
 h1 {
     grid-area: heading;
     font-weight: bold;
     font-style: normal;
-    color: rgb(92, 88, 50);
+    color: white;
 }
 
-nav {
-    display: grid;
+
+nav#languageSelect {
+    grid-area: ls;
+    background-color:#33332e;
+    justify-content: right;
 }
 
-ul.languageSelect {
-    grid-area: langSel;
+nav ul {
+    display: inline-flex;
+    gap: 9px;
+    flex-wrap: wrap;
+    align-items: center;
     list-style-type: none;
 }
 
-ul.navLinks {
+nav#navLinks {
     grid-area: nav;
+    background-color: #342714;
+}
+
+nav#navLinks li a {
+    color: white;
+    font-size: 1.3em;
+}
+
+nav#languageSelect li, a {
+    color: white;
 }
 
 main {
     grid-area: article;
+}
+
+#container .gallery {
+    grid-area: gallery;
+    display: flex;
+    flex-direction: column;
+}
+
+#container .gallery h2 {
+    text-align: center;
+}
+
+#container .gallery img {
+    max-width: 100%;
+}
+
+footer {
+    grid-area: footer;
 }

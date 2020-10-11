@@ -62,19 +62,50 @@ main {
     grid-area: article;
 }
 
-#container .gallery {
-    grid-area: gallery;
-    display: flex;
-    flex-direction: column;
+main h2 {
+    text-align: center;
 }
+
+/* gallery styles */
 
 #container .gallery h2 {
     text-align: center;
 }
 
-#container .gallery img {
-    max-width: 100%;
+#container .gallery {
+    grid-area: gallery;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
 }
+
+
+.full-img {
+    display: flex;
+    justify-content: center;
+}
+
+.full-img img {
+    width: 75%;
+}
+
+
+.thumb-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.thumb-bar img {
+
+    width: 19%;
+    border-style: solid;
+    border-width: thin;
+    border-color: wheat;
+
+}
+
+/* footer styles */
 
 footer {
     grid-area: footer;

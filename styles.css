@@ -39,7 +39,9 @@ nav#languageSelect {
 }
 
 nav ul {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     gap: 9px;
     flex-wrap: wrap;
     align-items: center;
@@ -78,11 +80,8 @@ main {
 
 /* gallery styles */
 
-#container .galleryHeading {
-    grid-area: galleryHeading;
-}
-
 .galleryHeading{
+    grid-area: galleryHeading;
     text-align: center;
     background-color: #5E2D5E;
     color: white;
@@ -110,6 +109,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 .thumb-bar img {
